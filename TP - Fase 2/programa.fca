@@ -1,0 +1,58 @@
+tmp_01 = 2 * 3 + 4;
+a1_ = 12345 - (5191 * 15);
+idade_valida? = 1;
+mult_3! = a1_ * 3;
+
+ESCREVER(tmp_01); -- Saída: 10
+ESCREVER(a1_); -- Saída: -65520
+ESCREVER(idade_valida?); -- Saída: 1
+ESCREVER(mult_3!); -- Saída: -196560
+
+valor = "Hello World";
+ESCREVER(valor); -- Saída: Hello World
+ESCREVER(365 * 2); -- Saída: 730
+ESCREVER("Olá, Mundo!"); -- Saída: Olá, Mundo!
+curso = "ESI";
+ESCREVER("Olá, " <> curso); -- Saída: Olá, ESI
+
+-- Este é um comentário de uma linha
+{- Este é um comentário
+    de múltiplas linhas -}
+    
+escola = "EST";
+inst = "IPCA";
+ESCREVER("Olá, #{escola} #{inst}");
+
+valor = ENTRADA() ;
+ESCREVER(valor) ;
+
+ate10 = ALEATORIO(10);
+ESCREVER(ate10);
+
+FUNCAO soma(a,b),: a+b ;
+seis = soma(4,2);
+ESCREVER(seis) ; -- Saída: 6
+
+FUNCAO area(a,b),: a*b ;
+FUNCAO area(c),: area(c, c);
+d = area(10, 20);
+e = area(30);
+ESCREVER(d);
+ESCREVER(e);
+
+lista = [ 1, 2, 3 ] ;
+ESCREVER( lista ); -- Saída: [1,2,3]
+vazia = [] ;
+ESCREVER( vazia ); -- Saída: []
+
+FUNCAO mais2(x),: x + 2 ;
+FUNCAO soma(a, b),: a + b ;
+
+lista1 = map(mais2, []) ; -- []
+lista2 = map(mais2, [1, 2, 3]) ; -- [3, 4, 5]
+lista3 = fold(soma, [1, 2, 3], 0) ; -- 6
+
+ESCREVER(lista1) ;
+ESCREVER(lista2) ;
+ESCREVER(lista3) ;
+
